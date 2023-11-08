@@ -9,10 +9,9 @@
 }
 
 body {
-  background-image: url(Login/register.png);
-	background-size: cover;
-
- 
+  background-color: rgb(30, 29, 27);
+  background-image: url('Login/register.png');
+  background-size: cover;
 }
 
 @keyframes gradient {
@@ -25,6 +24,11 @@ body {
 }
 
 .wrapper {
+  max-height: 100vh; /* This will make sure that the wrapper does not exceed the height of the viewport */
+  overflow-y: auto; /* This will add a scrollbar to the wrapper itself if the content is too tall */
+  padding: 20px; /* Reduce padding if necessary */
+  background: rgba(255, 255, 255, 0.5);
+  height:auto;
   max-width: 650px;
   width: 100%;
   background: transparent;
@@ -48,7 +52,6 @@ body {
 
 .wrapper .form {
   width: 100%;
-
 }
 
 .wrapper .form .inputfield {
@@ -59,7 +62,7 @@ body {
 
 .wrapper .form .inputfield label {
   width: 200px;
-  color: darkred;
+  color: rgb(190, 24, 24);
   margin-right: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -186,6 +189,13 @@ body {
 
 .wrapper .form .inputfield:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 10px; /* Even smaller padding on smaller screens */
+  }
+  /* Adjust font sizes, margins, and paddings of form elements here if necessary */
 }
 
 @media (max-width:420px) {
