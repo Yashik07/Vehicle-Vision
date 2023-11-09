@@ -16,7 +16,7 @@
   <div class="wrapper" style="background-color: rgb(12, 12, 12);">
     <div class="title">Student Registration Form
     </div>
-    <form action="POST" data-netlify="true">
+    <form action="submit.php" method="post">
       <div class="form">
 
         <div class="inputfield">
@@ -58,7 +58,7 @@
 
         <div class="inputfield">
           <label>Password</label>
-          <input type="password" class="input" id="password" name="" placeholder="Enter your password min 8 characters"
+          <input type="password" class="input" id="password" name="password" placeholder="Enter your password min 8 characters"
             autocomplete="off" onkeyup='check()' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
             maxlength="100" minlength="8" required>
@@ -66,7 +66,7 @@
 
         <div class="inputfield">
           <label>Confirm Password</label>
-          <input type="password" onkeyup='check()' class="input" id="confirm-password" name=""
+          <input type="password" onkeyup='check()' class="input" id="confirm-password" name="confirmPassword"
             placeholder="Confirm password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
             maxlength="100" minlength="8" required>
@@ -81,7 +81,7 @@
               <option value="+91">+91</option>
             </select>
           </div>
-          <input type="tel" class="input" name="phone-number" maxlength="10" id="phone-number"
+          <input type="tel" class="input" name="phoneNumber" maxlength="10" id="phone-number"
             placeholder="Enter your phone number" pattern="[7-9]{1}[0-9]{9}" title="Please enter valid phone number">
         </div>
 
@@ -93,18 +93,18 @@
 
         <div class="inputfield">
           <label>Vehicle Number</label>
-          <input type="number" class="input" name="pincode" placeholder="Enter your Vehicle Number" 
+          <input type="number" class="input" name="vehicle" placeholder="Enter your Vehicle Number" 
             pattern="^[0-9]{6}$" required>
         </div>
 
         <div class="inputfield">
           <label>Roll Number</label>
-          <input type="number" class="input" name="pincode" placeholder="Enter your Roll Number" 
+          <input type="number" class="input" name="roll" placeholder="Enter your Roll Number" 
             pattern="^[0-9]{6}$" required>
         </div>
 
       
-
+<!-- 
         <div class="inputfield">
           <label>Upload Id card Photo</label><p id="file-size">*Max size 100kb.</p>
           <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" required />
@@ -122,7 +122,7 @@
         <div class="inputfield" required>
           <div data-netlify-recaptcha="true"></div>
         </div>
-
+      -->
         <div class="inputfield btns" id="btn">
           <button type="submit" value="Register" class="btn" onclick="checkPassword()">Register</button>
           <button type="reset" value="Reset" class="btn">Reset</button>

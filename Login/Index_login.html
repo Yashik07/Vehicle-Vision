@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="Style_login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body style="background-color: rgb(140, 204, 88);">
-  <div class="wrapper">
-    <header>Login Form</header>
+<body style="background-color: rgb(30, 29, 27);">
+  <div class="wrapper" style="background-color: rgb(12, 12, 12);">
+    <header style="color: rgb(148, 9, 9);">Login Form</header>
     <form action="Home.html">
       <div class="field email">
         <div class="input-area">
@@ -27,16 +27,12 @@
         </div>
         <div class="error error-txt">Password can't be blank</div>
       </div>
-      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <div class="pass-txt"><a href="#" style="color: rgb(148, 9, 9);">Forgot password?</a></div>
       <input type="submit" value="Login" onclick="redirectToHome()">
 
     </form>
-    <div class="sign-txt">Not yet member? <a href="../index.html">BACK</a></div>
+    <div class="sign-txt" style="color: rgb(148, 9, 9);">Not yet member? <a href="#" style="color: rgb(148, 9, 9);">BACK</a></div>
   </div>
-
-  
-
-
   <script>
     function redirectToHome() {
       // Perform any additional validation or actions here if needed
@@ -45,7 +41,5 @@
       window.location.href = 'home.html';
     }
   </script>
-  
-
 </body>
 </html>
